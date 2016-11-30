@@ -1,0 +1,19 @@
+{
+	"author": "Recime Inc <hello@recime.ai>",
+	"dependencies": {},
+	"description": "Recime Bot",
+	"keywords": [
+		"Recime",
+		"Bot"
+	],
+	"license": "MIT",
+	"main": "main.js",
+	"name": "alan-turing",
+	"private": true,
+	"scripts": {
+		"build": "tsc",
+		"preinstall": "npm install -g typescript"
+	},
+	"title": "Alan Turing",
+	"version": "1.0.1"
+}
