@@ -30,5 +30,9 @@ if ('development' == app.get('env')) {
 app.post('/bot/:uid', routes.bot);
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('http://localhost:' + app.get('port'));
+  if (process.env.BOT_UNIQUE_ID){
+      console.log("INFO: Bot is running at: " + 'http://localhost:' + app.get('port') + "/bot/" + process.env.BOT_UNIQUE_ID);
+  }else {
+      console.log('http://localhost:' + app.get('port'));
+  }
 });
